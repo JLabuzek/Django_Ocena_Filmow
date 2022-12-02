@@ -21,6 +21,5 @@ from projekt import urls as projektUrls
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('projekt/', include('projekt.urls')),
-    path('', include(projektUrls)),
     path('auth/', obtain_auth_token),
 ]
